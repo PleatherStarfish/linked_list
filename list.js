@@ -1,6 +1,6 @@
 "use strict";
 
-class Node {
+class listNode {
     constructor(data, next = null) {
         this.data = data,
         this.next = next
@@ -30,7 +30,7 @@ class LinkedList {
     }
 
     addFirst(data) {
-        const node = new Node(data); // Create new node
+        const node = new listNode(data); // Create new node
         if (this.head === null) {
             this.head = node;         // If the list is headless, make new node the head
         }
@@ -43,7 +43,7 @@ class LinkedList {
     }
 
     addLast(data) {
-        let node = new Node(data);    // Create a new node
+        let node = new listNode(data);    // Create a new node
         if (this.head === null) {
             this.head = node;         // If the list is headless, make new node the head
         }
@@ -58,5 +58,5 @@ class LinkedList {
 
 module.exports = {
     LinkedList,
-    Node
+    listNode
 }
