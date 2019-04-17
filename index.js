@@ -1,4 +1,4 @@
-const { LinkedList, Node } = require("./list.js");
+const { LinkedList, ListNode } = require("./list.js");
 
 
 let list = new LinkedList();
